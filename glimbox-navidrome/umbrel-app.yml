@@ -4,7 +4,7 @@ category: Media
 name: Navidrome
 version: "latest"
 icon: https://svgshare.com/i/uPh.svg
-tagline: Personal music server
+tagline: Personal modern music server
 description: >-
   Navidrome is an open source web-based music collection server and streamer.
   It gives you freedom to listen to your music collection from any browser or mobile device. It is like your personal Spotify!
