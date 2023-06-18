@@ -10,6 +10,7 @@ services:
   server:
     image: fallenbagel/jellyseerr:v1.5.0
     environment:
+      - LOG_LEVEL=debug
       - PUID=1000
       - PGID=1000
     volumes:
