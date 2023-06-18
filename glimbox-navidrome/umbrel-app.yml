@@ -10,7 +10,9 @@ description: >-
   It gives you freedom to listen to your music collection from any browser or mobile device. It is like your personal Spotify!
   Works in conjunction with Lidarr (accesses the music in downloads/music)
 
-developer: ""
+   https://www.navidrome.org/docs/overview/#apps
+
+developer: "Deluan Quintão"
 website: https://www.navidrome.org/
 dependencies: []
 repo: https://github.com/navidrome/navidrome
