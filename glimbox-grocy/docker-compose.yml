@@ -9,7 +9,9 @@ services:
       
   server:
     image: linuxserver/grocy:latest
-    user: '1000:1000'
+    environment:
+      - PUID=1000
+      - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
     restart: on-failure
