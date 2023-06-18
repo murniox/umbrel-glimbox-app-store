@@ -5,10 +5,10 @@ services:
     environment:
       APP_HOST: glimbox-grocy_server_1
       APP_PORT: 9283
-      #PROXY_AUTH_WHITELIST: "/api/*"
+      PROXY_AUTH_WHITELIST: "/api/*"
 
   server:
-    image: lscr.io/linuxserver/grocy:latest
+    image: linuxserver/grocy:latest
     environment:
       - PUID=1000
       - PGID=1000
