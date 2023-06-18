@@ -21,7 +21,7 @@ website: https://overseerr.dev/
 dependencies: []
 repo: https://github.com/sct/overseerr
 support: https://github.com/sct/overseerr/issues
-port: 9283
+port: 443
 gallery:
   - 1.jpg
   - 2.jpg
