@@ -10,6 +10,7 @@ services:
     image: lissy93/dashy:latest
     environment:
       #- NODE_ENV=production
+      - LOG_LEVEL=debug
       - PUID=1000
       - PGID=1000
     volumes:
