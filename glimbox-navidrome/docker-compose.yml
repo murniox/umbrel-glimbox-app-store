@@ -5,13 +5,15 @@ services:
     environment:
       APP_HOST: glimbox-navidrome_server_1
       APP_PORT: 4533
-      #PROXY_AUTH_WHITELIST: "/api/*"
 
   server:
     image: deluan/navidrome:latest
     environment:
       - PUID=1000
       - PGID=1000
+      ND_SCANSCHEDULE: 1h
+      ND_LOGLEVEL: info  
+      ND_SESSIONTIMEOUT: 24h
     volumes:
       - ${APP_DATA_DIR}/data:/data
       - ${UMBREL_ROOT}/data/storage/downloads/music:/music:ro
