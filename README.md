@@ -1,6 +1,12 @@
-## Umbrel Community App Store Template
+## Umbrel Glimbox App Store
 
-This repository is a template to create an Umbrel Community App Store. These additional app stores allow developers to distribute applications without submitting to the [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
+This repository is an Umbrel Community App Store named Glimbox. 
+
+
+
+---
+
+These additional app stores allow developers to distribute applications without submitting to the [Official Umbrel App Store](https://github.com/getumbrel/umbrel-apps).
 
 Just click the "Use this template" button above and start adding your own apps!
 
