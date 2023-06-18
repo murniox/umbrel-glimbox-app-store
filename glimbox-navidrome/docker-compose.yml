@@ -8,9 +8,8 @@ services:
 
   server:
     image: deluan/navidrome:latest
+    user: "1000:1000"
     environment:
-      - PUID=1000
-      - PGID=1000
       ND_SCANSCHEDULE: 1h
       ND_LOGLEVEL: info  
       ND_SESSIONTIMEOUT: 24h
