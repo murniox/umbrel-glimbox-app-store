@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: glimbox-jellyseerr
+category: Media
+name: Jellyseerr
+version: "latest"
+icon: https://svgshare.com/i/u6p.svg
+tagline: Beautiful media discovery
+description: >-
+  Jellyseer is a request management and media discovery tool. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers.
+
+
+  Jellyseerr scans your Jellyfin, Emby or Plex libraries at regular intervals, so it knows which items are already available on your server.
+  It also integrates with the popular DVR applications Radarr and Sonarr, and supports activity monitoring within Jellyseerr itself.
+
+
+  🛠️ SET-UP INSTRUCTIONS
+
+  During initial set-up, you will need to input your Umbrel device's IP address to connect to Jellyfin, Emby or Plex (and optional services such as Radarr and Sonarr).
+  You can find your device's IP address by visiting your router's admin dashboard or by using an IP scanning tool like Angry IP Scanner.
+developer: Fallenbagel
+dependencies: []
+repo: https://github.com/Fallenbagel/jellyseerr
+support: https://discord.com/invite/ckbvBtDJgC
+port: 5055
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: ""
+torOnly: false
+submitter: murniox
+submission:
