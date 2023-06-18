@@ -2,21 +2,20 @@ version: "3.8"
 services:
   app_proxy:
     environment:
-      APP_HOST: glimbox-dashy_web_1
-      APP_PORT: 4000
+      APP_HOST: glimbox-dashy_server_1
+      APP_PORT: '4000:80'
       #PROXY_AUTH_WHITELIST: "/api/*"
 
   server:
     image: lissy93/dashy:latest
     environment:
       #- NODE_ENV=production
-      - LOG_LEVEL=debug
       - PUID=1000
       - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/config/conf.yml:/app/public/conf.yml
       - ${APP_DATA_DIR}/data/icons:/app/public/item-icons
-    #restart: on-failure
+    restart: on-failure
     
     #ports:
     #  - 4000:80
