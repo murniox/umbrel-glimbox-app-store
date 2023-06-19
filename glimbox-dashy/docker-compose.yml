@@ -3,8 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: glimbox-dashy_server_1
-      APP_PORT: 4000
-      #PROXY_AUTH_WHITELIST: "/api/*"
+      APP_PORT: 80
 
   server:
     image: lissy93/dashy:latest
@@ -15,14 +14,10 @@ services:
       - ${APP_DATA_DIR}/data/config/conf.yml:/app/public/conf.yml
       - ${APP_DATA_DIR}/data/icons:/app/public/item-icons
     restart: on-failure
-    
-    #ports:
-    #  - 4000:80
 
-    # Configure healthchecks
-    #healthcheck:
-    #  test: ['CMD', 'node', '/app/services/healthcheck']
-    #  interval: 1m30s
-    #  timeout: 10s
-    #  retries: 3
-    #  start_period: 40s
+    healthcheck:
+      test: ['CMD', 'node', '/app/services/healthcheck']
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
