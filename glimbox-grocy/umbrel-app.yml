@@ -18,8 +18,8 @@ gallery:
   - 2.jpg
   - 3.jpg
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
 releaseNotes: ""
 torOnly: false
 submitter: murniox
