@@ -16,11 +16,3 @@ sections: # An array of sections
     description: A live demo
     icon: far fa-rocket
     url: https://dashy-demo-1.netlify.app
-- name: Section 2 - Local Services
-  items:
-  - title: Firewall
-    icon: favicon
-    url: http://192.168.1.1/
-  - title: Game Server
-    icon: https://i.ibb.co/710B3Yc/space-invader-x256.png
-    url: http://192.168.130.1/
