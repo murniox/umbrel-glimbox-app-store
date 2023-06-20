@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: glimbox-sabnzbd
+category: Productivity
+name: Sabnzbd
+version: "latest"
+tagline: Groceries & household management
+description: >-
+  
+developer: Bernd Bestel
+website: https://grocy.info/
+dependencies: []
+repo: https://github.com/grocy/grocy
+support: https://www.reddit.com/r/grocy
+port: 8080
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
+releaseNotes: ""
+torOnly: false
+submitter: murniox
+submission: ""
