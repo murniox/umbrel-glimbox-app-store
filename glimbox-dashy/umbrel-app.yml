@@ -3,20 +3,19 @@ id: glimbox-dashy
 category: Productivity
 name: Dashy
 version: "latest"
-icon: https://svgshare.com/i/u6p.svg
-tagline: Beautiful media discovery
+icon: https://svgshare.com/i/uUf.svg
+tagline: Ultimate personal dashboard
 description: >-
-  Jellyseer is a request management and media discovery tool. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers.
+  Dashy is an open source, highly customizable, easy to use, privacy-respecting dashboard app.
 
+  "It's packed full of useful features, to help you build your perfect dashboard."
+  Including status checks, keyboard shortcuts, dynamic widgets, auto-fetched favicon icons and font-awesome support, built-in authentication, tons of themes, an interactive config editor, many display layouts plus loads more.
+  All the code is free and open source, and everything is thoroughly documented, you can get support with any questions on GitHub.
 
-  Jellyseerr scans your Jellyfin, Emby or Plex libraries at regular intervals, so it knows which items are already available on your server.
-  It also integrates with the popular DVR applications Radarr and Sonarr, and supports activity monitoring within Jellyseerr itself.
-
-
-developer: Fallenbagel
+developer: Lissy93
 dependencies: []
-repo: https://github.com/Fallenbagel/jellyseerr
-support: https://discord.com/invite/ckbvBtDJgC
+repo: https://github.com/Lissy93/dashy
+support: https://github.com/Lissy93/dashy/discussions
 port: 4000
 gallery:
   - 1.jpg
