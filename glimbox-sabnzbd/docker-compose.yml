@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
       
   server:
-    image: lscr.io/linuxserver/sabnzbd:latest
+    image: linuxserver/sabnzbd:latest
     environment:
       - PUID=1000
       - PGID=1000
@@ -15,6 +15,6 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
       - ${UMBREL_ROOT}/data/storage/downloads:/downloads
-      #- ${UMBREL_ROOT}/data/storage/downloads/incomplete:/incomplete-downloads
+      - ${UMBREL_ROOT}/data/storage/downloads/incomplete:/incomplete-downloads
       #- ${UMBREL_ROOT}/data/storage/downloads/complete:/complete-downloads
     restart: on-failure
