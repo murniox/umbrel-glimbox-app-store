@@ -9,7 +9,7 @@ services:
   mongo:
     restart: on-failure
     user: "1000:1000"
-    image: mongo:4.4.18
+    image: mongo:4.5
     #container_name: mongo
     expose:
       - 27017
