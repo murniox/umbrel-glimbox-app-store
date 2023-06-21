@@ -44,26 +44,26 @@ services:
       # see https://github.com/overleaf/overleaf/issues/695
       TEXMFVAR: /var/lib/sharelatex/tmp/texmf-var    
     
-    mongo:
-      restart: always
-      image: mongo:4.4
-      container_name: mongo
-      expose:
-        - 27017
-      volumes:
-        - ~/mongo_data:/data/db
-      healthcheck:
-        test: echo 'db.stats().ok' | mongo localhost:27017/test --quiet
-        interval: 10s
-        timeout: 10s
-        retries: 5
+  mongo:
+    restart: always
+    image: mongo:4.4
+    container_name: mongo
+    expose:
+      - 27017
+    volumes:
+      - ~/mongo_data:/data/db
+    healthcheck:
+      test: echo 'db.stats().ok' | mongo localhost:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
 
-    redis:
-      restart: always
-      image: redis:6.2
-      container_name: redis
-      expose:
-        - 6379
-      volumes:
-        - ~/redis_data:/data    
+  redis:
+    restart: always
+    image: redis:6.2
+    container_name: redis
+    expose:
+      - 6379
+    volumes:
+      - ~/redis_data:/data    
 
