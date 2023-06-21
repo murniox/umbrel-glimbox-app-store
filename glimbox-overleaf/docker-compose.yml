@@ -14,7 +14,7 @@ services:
     expose:
       - 27017
     volumes:
-      - {APP_DATA_DIR}/mongo_data:/data/db
+      - ${APP_DATA_DIR}/mongo_data:/data/db
     healthcheck:
       test: echo 'db.stats().ok' | mongo localhost:27017/test --quiet
       interval: 10s
@@ -29,7 +29,7 @@ services:
     expose:
       - 6379
     volumes:
-      - {APP_DATA_DIR}/redis_data:/data    
+      - ${APP_DATA_DIR}/redis_data:/data    
       
   server:
     image: sharelatex/sharelatex:latest
