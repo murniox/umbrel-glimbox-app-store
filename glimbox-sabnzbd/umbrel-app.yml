@@ -1,17 +1,22 @@
 manifestVersion: 1
 id: glimbox-sabnzbd
-category: Productivity
+category: Media
 name: Sabnzbd
 version: "latest"
-tagline: Groceries & household management
+icon: https://svgshare.com/i/uTs.svg
+tagline: Automated Usenet download tool
 description: >-
+  Sabnzbd is a program to download binary files from Usenet servers.
+  Many people upload all sorts of interesting material to Usenet and you need a special program to get this material with the least effort.
+  Integrate it into Radarr, Sonarr, Lidarr and Prowlarr. 
+  You also need a Usenet provider (EWEKA) and an NZB indexer (NZBgeek).
   
-developer: Bernd Bestel
-website: https://grocy.info/
+developer: sabnzbd
+website: https://sabnzbd.org/
 dependencies: []
-repo: https://github.com/grocy/grocy
-support: https://www.reddit.com/r/grocy
-port: 8080
+repo: https://github.com/sabnzbd/sabnzbd
+support: https://forums.sabnzbd.org/
+port: 8087
 gallery:
   - 1.jpg
   - 2.jpg
