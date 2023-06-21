@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: glimbox-overleaf
+category: Productivity
+name: Overleaf
+version: "latest"
+
+tagline: Automated Usenet download tool
+description: >-
+  Sabnzbd is a program to download binary files from Usenet servers.
+  Many people upload all sorts of interesting material to Usenet and you need a special program to get this material with the least effort.
+  Integrate it into Radarr, Sonarr, Lidarr and Prowlarr. 
+  You also need a Usenet provider (EWEKA) and an NZB indexer (NZBgeek).
+  
+developer: ....
+website: https://sabnzbd.org/
+dependencies: []
+repo: https://github.com/sabnzbd/sabnzbd
+support: https://forums.sabnzbd.org/
+port: 8087
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: "admin"
+defaultPassword: "admin"
+releaseNotes: ""
+torOnly: false
+submitter: murniox
+submission: ""
