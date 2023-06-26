@@ -27,8 +27,8 @@ gallery:
   - 2.jpg
   - 3.jpg
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "guacadmin"
+defaultPassword: "guacadmin"
 releaseNotes: ""
 torOnly: false
 submitter: Umbrel
