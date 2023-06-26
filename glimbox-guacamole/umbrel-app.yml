@@ -2,26 +2,17 @@ manifestVersion: 1
 id: glimbox-guacamole
 category: Media
 name: Guacamole
-version: "1.32.5"
-tagline: Beautiful media discovery
+version: "latest"
+icon: https://svgshare.com/i/ufV.svg
+tagline: Clientless remote desktop gateway
 description: >-
-  Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.
-
-
-  Overseerr scans your Plex libraries at regular intervals, so it knows which items are already available on your server.
-  It also integrates with the popular DVR applications Radarr and Sonarr, and supports activity monitoring within Overseerr itself.
-
-
-  🛠️ SET-UP INSTRUCTIONS
-
-  During initial set-up, you will need to input your Umbrel device's IP address to connect to Plex (and optional services such as Radarr and Sonarr).
-  You can find your device's IP address by visiting your router's admin dashboard or by using an IP scanning tool like Angry IP Scanner.
+  Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
 developer: Ryan Cohen
-website: https://overseerr.dev/
+website: https://guacamole.apache.org/
 dependencies: []
-repo: https://github.com/sct/overseerr
-support: https://github.com/sct/overseerr/issues
-port: 8080
+repo: https://hub.docker.com/r/jwetzell/guacamole
+support: https://guacamole.apache.org/support/
+port: 8085
 gallery:
   - 1.jpg
   - 2.jpg
@@ -31,5 +22,5 @@ defaultUsername: "guacadmin"
 defaultPassword: "guacadmin"
 releaseNotes: ""
 torOnly: false
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-apps/pull/607
+submitter: murniox
+
