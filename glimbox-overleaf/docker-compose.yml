@@ -33,7 +33,7 @@ services:
       
   server:
     image: sharelatex/sharelatex:latest
-    user: "1000:1000"
+    #user: "1000:1000"
     environment:
       - TZ=Etc/UTC
     depends_on:
