@@ -13,4 +13,5 @@ services:
       - PGID=1000
     volumes:
       - ${APP_DATA_DIR}/data/config:/config
+    network_mode: "host"
     restart: on-failure
