@@ -3,6 +3,7 @@ id: glimbox-duplicati
 category: Productivity
 name: Duplicati
 version: "latest"
+icon: 
 
 tagline: Automated Usenet download tool
 description: >-
