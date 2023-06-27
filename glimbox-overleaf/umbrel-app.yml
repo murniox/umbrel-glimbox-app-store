@@ -3,6 +3,7 @@ id: glimbox-overleaf
 category: Productivity
 name: Overleaf
 version: "latest"
+icon: https://svgshare.com/i/uhY.svg
 
 tagline: Automated Usenet download tool
 description: >-
