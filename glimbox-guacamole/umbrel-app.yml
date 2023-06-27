@@ -1,9 +1,9 @@
 manifestVersion: 1
 id: glimbox-guacamole
-category: Media
+category: Productivity
 name: Guacamole
 version: "latest"
-icon: https://svgshare.com/i/ufV.svg
+icon: https://svgshare.com/i/uih.svg
 tagline: Clientless remote desktop gateway
 description: >-
   Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
