@@ -3,17 +3,18 @@ id: glimbox-duplicati
 category: Productivity
 name: Duplicati
 version: "latest"
-icon: 
+icon: https://svgshare.com/i/uhF.svg
 
-tagline: Automated Usenet download tool
+tagline: Encrypted backups on cloud storage services
 description: >-
-  ...
+  Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers. It works with:
+  Amazon S3, IDrive e2, Backblaze (B2), Box, Dropbox, FTP, Google Cloud and Drive, HubiC, MEGA, Microsoft Azure and OneDrive, Rackspace Cloud Files, OpenStack Storage (Swift), Sia, Storj DCS, SSH (SFTP), WebDAV, Tencent Cloud Object Storage (COS), and more!
   
-developer: ....
-website: https://sabnzbd.org/
+developer: duplicati
+website: https://www.duplicati.com/
 dependencies: []
-repo: https://github.com/sabnzbd/sabnzbd
-support: https://forums.sabnzbd.org/
+repo: https://github.com/duplicati/duplicati
+support: https://forum.duplicati.com/
 port: 3389
 gallery:
   - 1.jpg
