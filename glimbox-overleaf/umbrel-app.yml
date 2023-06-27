@@ -5,15 +5,15 @@ name: Overleaf
 version: "latest"
 icon: https://svgshare.com/i/uhY.svg
 
-tagline: Automated Usenet download tool
+tagline: Online real-time collaborative LaTeX editor
 description: >-
-  Not possible because the image is not compatible with raspberry pi. Diffrent problems regarding permission on non raspberry pi systems. -> not usable in this state.
+  Overleaf is an open-source online real-time collaborative LaTeX editor. We run a hosted version at www.overleaf.com, but you can also run your own local version, and contribute to the development of Overleaf.
   
-developer: ....
-website: https://sabnzbd.org/
+developer: overleaf
+website: https://de.overleaf.com/
 dependencies: []
-repo: https://github.com/sabnzbd/sabnzbd
-support: https://forums.sabnzbd.org/
+repo: https://github.com/overleaf/overleaf
+support: ...
 port: 8083
 gallery:
   - 1.jpg
@@ -22,7 +22,7 @@ gallery:
 path: ""
 defaultUsername: "admin"
 defaultPassword: "admin"
-releaseNotes: ""
+releaseNotes: "Not possible because the image is not compatible with raspberry pi. Diffrent problems regarding permission on non-raspberry pi systems. -> not usable in this state."
 torOnly: false
 submitter: murniox
 submission: ""
