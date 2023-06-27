@@ -6,7 +6,7 @@ version: "latest"
 
 tagline: Automated Usenet download tool
 description: >-
-  Not possible because the image is not compatible.
+  Not possible because the image is not compatible with raspberry pi. Diffrent problems regarding permission on non raspberry pi systems. -> not usable in this state.
   
 developer: ....
 website: https://sabnzbd.org/
