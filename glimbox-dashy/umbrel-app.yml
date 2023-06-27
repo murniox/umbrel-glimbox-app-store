@@ -25,7 +25,7 @@ gallery:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: "Currently there is an issue with saving the config changes on Umbrel. (user permissions are not correct in the docker file) "
+releaseNotes: "Currently there is an issue with saving the config changes on Umbrel. (user permissions are not correct in the docker file https://github.com/Lissy93/dashy/issues/340) "
 torOnly: false
 submitter: murniox
 submission:
