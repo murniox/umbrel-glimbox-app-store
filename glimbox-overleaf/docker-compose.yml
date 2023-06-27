@@ -6,7 +6,7 @@ services:
       APP_HOST: glimbox-overleaf_server_1
       APP_PORT: 8080
 
-  mongo:
+  db:
     restart: on-failure
     #user: "1000:1000"
     image: mongo:4.4.8
@@ -16,7 +16,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/mongo_data:/data/db
     healthcheck:
-      test: echo 'db.stats().ok' | mongo localhost:27017/test --quiet
+      test: echo 'db.stats().ok' | db localhost:27017/test --quiet
       interval: 10s
       timeout: 10s
       retries: 5
@@ -37,7 +37,7 @@ services:
     environment:
       - TZ=Etc/UTC
     depends_on:
-      mongo:
+      db:
         condition: service_healthy
       redis:
         condition: service_started
@@ -45,7 +45,7 @@ services:
     ports:
       - 80
     links:
-      - mongo
+      - db
       - redis
     stop_grace_period: 60s
     restart: on-failure
