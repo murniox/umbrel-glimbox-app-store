@@ -43,3 +43,8 @@ To remove an app store:
 ```
 sudo ~/umbrel/scripts/repo remove https://github.com/getumbrel/umbrel-community-app-store.git
 ```
+
+To update an app from the Glimbox App Store
+```
+sudo ~/umbrel/scripts/app install glimbox-<app-name>
+```
