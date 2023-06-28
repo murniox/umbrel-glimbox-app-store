@@ -19,7 +19,7 @@ description: >-
   
   - The email address you give does not matter and does not need to exist.
 
-  - To connect to Radarr and Sonarr you can also use `http://radarr_server_1` and `http://sonarr_server_1`.
+  - To connect to Radarr and Sonarr you can also use `radarr_server_1` and `sonarr_server_1` in the 'Hostname or IP Address` field.
   
 developer: Fallenbagel
 dependencies: []
