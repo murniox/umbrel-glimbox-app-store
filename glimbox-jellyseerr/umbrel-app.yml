@@ -18,8 +18,12 @@ description: >-
 
   🛠️ SET-UP INSTRUCTIONS
 
-  During initial set-up, you will need to input your Umbrel device's IP address to connect to Jellyfin, Emby or Plex (and optional services such as Radarr and Sonarr).
-  You can find your device's IP address by visiting your router's admin dashboard or by using an IP scanning tool like Angry IP Scanner.
+  During initial set-up, you will need to input your Umbrel device's IP address to connect to Jellyfin, Emby or Plex.
+
+  The email address you give does not matter and does not need to exist.
+
+  To connect to Radarr and Sonarr use `http://radarr_server_1` and `http://sonarr_server_1`.
+  
 developer: Fallenbagel
 dependencies: []
 repo: https://github.com/Fallenbagel/jellyseerr
