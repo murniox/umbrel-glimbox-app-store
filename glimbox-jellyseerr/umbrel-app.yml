@@ -7,8 +7,6 @@ icon: https://svgshare.com/i/u6p.svg
 tagline: Beautiful media discovery for Jellyfin
 description: >-
 
-  Launches - but for some reason login with jellyfin is not working.
-
   Jellyseer is a request management and media discovery tool. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers.
 
 
