@@ -4,7 +4,7 @@ category: Media
 name: Jellyseerr
 version: "latest"
 icon: https://svgshare.com/i/u6p.svg
-tagline: Beautiful media discovery
+tagline: Beautiful media discovery for Jellyfin
 description: >-
 
   Launches - but for some reason login with jellyfin is not working.
