@@ -5,6 +5,7 @@ services:
     environment:
       APP_HOST: glimbox-jellyseerr_server_1
       APP_PORT: 5055
+      PROXY_AUTH_WHITELIST: "/api/*"
 
   server:
     image: 'fallenbagel/jellyseerr:1.5.0'
