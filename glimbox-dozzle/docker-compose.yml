@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: glimbox-dozzle_server_1
+      APP_PORT: 8080
+      
+  server:
+    image: amir20/dozzle:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${UMBREL_ROOT}/var/run/docker.sock:/var/run/docker.sock
+    restart: on-failure
+
