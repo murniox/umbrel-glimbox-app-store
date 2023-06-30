@@ -1,14 +1,24 @@
-version: "3"
+version: "2"
 
 services:
   app_proxy:
     environment:
-      APP_HOST: glimbox-dozzle_server_1
-      APP_PORT: 8080
+      APP_HOST: glimbox-filestash_server_1
+      APP_PORT: 8334
       
   server:
-    image: amir20/dozzle:latest
-    volumes:
-      - ${UMBREL_ROOT}/var/run/docker.sock:/var/run/docker.sock
+    image: machines/filestash:latest
+    environment:
+    - APPLICATION_URL=http://glimbox-filestash_server_1
+    #- GDRIVE_CLIENT_ID=<gdrive_client>
+    #- GDRIVE_CLIENT_SECRET=<gdrive_secret>
+    #- DROPBOX_CLIENT_ID=<dropbox_key>
+    - ONLYOFFICE_URL=http://onlyoffice
     restart: on-failure
-
+    
+  onlyoffice:
+    container_name: filestash_oods
+    image: onlyoffice/documentserver:latest
+    restart: always
+    security_opt:
+      - seccomp:unconfined
