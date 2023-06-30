@@ -9,7 +9,7 @@ services:
   server:
     image: machines/filestash:latest
     volumes:
-      - path/to/your/local/mount/directory:/app/data/state
+      - ${APP_DATA_DIR}/data/config:/app/data/state
     environment:
     - APPLICATION_URL=http://glimbox-filestash_server_1
     #- GDRIVE_CLIENT_ID=<gdrive_client>
