@@ -1,7 +1,7 @@
 manifestVersion: 1
-id: glimbox-dozzle
+id: glimbox-filestash
 category: Media
-name: Dozzle
+name: Filestash
 version: "latest"
 tagline: Automated Usenet download tool
 description: >-
@@ -15,7 +15,7 @@ website: https://sabnzbd.org/
 dependencies: []
 repo: https://github.com/sabnzbd/sabnzbd
 support: https://forums.sabnzbd.org/
-port: 8080
+port: 8334
 gallery:
   - 1.jpg
   - 2.jpg
