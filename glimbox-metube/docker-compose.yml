@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: glimbox-metube_server_1
+      APP_PORT: 8081
+      PROXY_AUTH_WHITELIST: "/api/*"
+
+  server:
+    image: ghcr.io/alexta69/metube:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+    restart: on-failure
