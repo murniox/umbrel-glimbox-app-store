@@ -4,27 +4,15 @@ category: Media
 name: Readarr
 version: "latest"
 icon: https://svgshare.com/i/v8v.svg
-tagline: Beautiful media discovery for Jellyfin
+tagline: Ebook and audiobook collection manager
 description: >-
-
-  Jellyseer is a request management and media discovery tool. It is a fork of Overseerr built to bring support for Jellyfin & Emby media servers.
-
-
-  Jellyseerr scans your Jellyfin, Emby or Plex libraries at regular intervals, so it knows which items are already available on your server.
-  It also integrates with the popular DVR applications Radarr and Sonarr, and supports activity monitoring within Jellyseerr itself.
-
-
-  🛠️ SET-UP INSTRUCTIONS
-  - During initial set-up, you will need to input your Umbrel device's IP address to connect to Jellyfin, Emby or Plex (and optional services such as Radarr and Sonarr). You can find your device's IP address by visiting your router's admin dashboard or by using an IP scanning tool like Angry IP Scanner. Your Tailscale IP address does not work (Unless you have installed Tailscale manually on the host as well). 
+  Readarr is an ebook and audiobook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books from your favorite authors and will grab, sort, and rename them. Note that only one type of a given book is supported. If you want both an audiobook and ebook of a given book you will need multiple instances.
   
-  - The email address you give does not matter and does not need to exist.
-
-  - To connect to Radarr and Sonarr you can also use `radarr_server_1` and `sonarr_server_1` in the 'Hostname or IP Address` field.
-  
-developer: Fallenbagel
+developer: Readarr
 dependencies: []
-repo: https://github.com/Fallenbagel/jellyseerr
-support: https://discord.com/invite/ckbvBtDJgC
+repo: https://github.com/Readarr/Readarr
+website: https://readarr.com/
+support: https://readarr.com/discord
 port: 8787
 gallery:
   - 1.jpg
@@ -33,7 +21,7 @@ gallery:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: ""
+releaseNotes: "Should also be directly integrated into Prowlarr, Transmission, Snbnzbd... before adding it to the official Umbrel store"
 torOnly: false
 submitter: murniox
 submission:
