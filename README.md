@@ -46,5 +46,6 @@ sudo ~/umbrel/scripts/repo remove https://github.com/getumbrel/umbrel-community-
 
 To update an app from the Glimbox App Store
 ```
+sudo ~/umbrel/scripts/repo update
 sudo ~/umbrel/scripts/app install glimbox-<app-name>
 ```
