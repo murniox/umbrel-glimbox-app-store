@@ -1,0 +1,35 @@
+version: "2.1"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: glimbox-kimai_server_1
+      APP_PORT: 8033
+      
+  server:
+    image: linuxserver/kimai:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - DATABASE_URL=mysql://your_db_user:your_db_pass@your_db_host:3306/your_db_name?charset=your_db_charset&serverVersion=your_db_version
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+    restart: on-failure
+
+  mariadb:
+    image: lscr.io/linuxserver/mariadb:latest
+    container_name: mariadb
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - MYSQL_ROOT_PASSWORD=ROOT_ACCESS_PASSWORD
+      - MYSQL_DATABASE=your_db_name #optional
+      - MYSQL_USER=your_db_user #optional
+      - MYSQL_PASSWORD=your_db_pass #optional
+    volumes:
+      - path_to_data:/config
+    ports:
+      - 3306:3306
+    restart: unless-stopped
